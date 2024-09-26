@@ -24,5 +24,11 @@ namespace WPF_App
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string s = null;
+            s.ToLower();
+        }
     }
 }

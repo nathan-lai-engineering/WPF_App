@@ -13,5 +13,10 @@ namespace WPF_App
     /// </summary>
     public partial class App : Application
     {
+        private void Application_DispatcherUnhandledException(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs exceptionEventArgs)
+        {
+            MessageBox.Show("An unhandled exception just occured: " + exceptionEventArgs.Exception.Message, "Exception", MessageBoxButton.OK, MessageBoxImage.Error);
+            exceptionEventArgs.Handled = true;
+        }
     }
 }
