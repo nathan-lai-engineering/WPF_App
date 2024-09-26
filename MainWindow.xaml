@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Click to cause error!" HorizontalAlignment="Left" Margin="53,46,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Click to cause error!" HorizontalAlignment="Left" Margin="100,46,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <TextBlock Margin="10" TextWrapping="Wrap" Foreground="Purple">This is some text for testing. This page is the playground for WPF! Gonna be real messy but we're going to try to learn everything! Quick aside, heres a link to the guide I'm using <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://wpf-tutorial.com/basic-controls/the-textblock-control-inline-formatting/"> this link.</Hyperlink> This is just a really strong string to demonstrate<LineBreak/> <Bold>wrapping</Bold></TextBlock>
     </Grid>
 </Window>
